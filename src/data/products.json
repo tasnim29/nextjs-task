@@ -1,0 +1,224 @@
+[
+  {
+    "id": 1,
+    "name": "Pro Basketball",
+    "shortDesc": "Official size and weight basketball for indoor and outdoor play.",
+    "longDesc": "Durable composite leather basketball designed for indoor and outdoor courts. Features excellent grip, high bounce, and consistent flight. Suitable for all skill levels.",
+    "price": 49.99,
+    "image": "https://static.ftshp.digital/img/p/9/0/0/8/0/90080-full_product.jpg",
+    "category": "Basketball",
+    "brand": "SportX",
+    "stock": 25,
+    "rating": 4.7,
+    "features": [
+      "Composite leather",
+      "Indoor/Outdoor",
+      "Official size",
+      "High bounce"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Soccer Ball Elite",
+    "shortDesc": "FIFA-approved soccer ball with premium stitching.",
+    "longDesc": "Premium stitched soccer ball for professional and casual play. Water-resistant, durable, and optimized for control and precision. Perfect for training and competitive matches.",
+    "price": 39.99,
+    "image": "https://media.newitts.com/cdn/images/products/new-design/800x800/it101463c_6.jpg",
+    "category": "Soccer",
+    "brand": "GoalPro",
+    "stock": 40,
+    "rating": 4.5,
+    "features": [
+      "FIFA approved",
+      "Water-resistant",
+      "Durable stitching",
+      "Excellent control"
+    ],
+    "onSale": true
+  },
+  {
+    "id": 3,
+    "name": "Tennis Racket Pro 3000",
+    "shortDesc": "Lightweight racket with advanced tension technology.",
+    "longDesc": "High-performance tennis racket with carbon frame for power and precision. Lightweight for faster swings and reduced arm fatigue. Suitable for intermediate and advanced players.",
+    "price": 89.99,
+    "image": "https://courtsidetennis.com/cdn/shop/articles/clash.jpg?v=1649364491",
+    "category": "Tennis",
+    "brand": "AcePro",
+    "stock": 15,
+    "rating": 4.8,
+    "features": [
+      "Carbon frame",
+      "Lightweight",
+      "Advanced tension technology",
+      "Durable grip"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Yoga Mat Comfort Plus",
+    "shortDesc": "Non-slip, cushioned yoga mat for all exercises.",
+    "longDesc": "Eco-friendly TPE yoga mat with extra cushioning and non-slip surface. Lightweight, portable, and perfect for yoga, pilates, and stretching exercises.",
+    "price": 29.99,
+    "image": "https://cdn.thewirecutter.com/wp-content/media/2024/07/yoga-mat-2048px-1633-2x1-1.jpg?width=2048&quality=75&crop=2:1&auto=webp",
+    "category": "Fitness",
+    "brand": "ZenFlex",
+    "stock": 60,
+    "rating": 4.6,
+    "features": [
+      "Non-slip",
+      "Eco-friendly",
+      "Extra cushioning",
+      "Lightweight & portable"
+    ],
+    "onSale": true
+  },
+  {
+    "id": 5,
+    "name": "Running Shoes SpeedX",
+    "shortDesc": "Breathable running shoes with excellent cushioning.",
+    "longDesc": "Lightweight running shoes with breathable mesh, shock-absorbing soles, and ergonomic design. Ideal for jogging, marathons, and daily workouts.",
+    "price": 79.99,
+    "image": "https://cdn-img.poizonapp.com/stark/stark-web/113828458/dcf12c0b608b0f9af1634aba159167a5.jpg?x-oss-process=image/format,webp/resize,w_800,h_800",
+    "category": "Running",
+    "brand": "RunFast",
+    "stock": 35,
+    "rating": 4.7,
+    "features": [
+      "Breathable mesh",
+      "Shock-absorbing soles",
+      "Lightweight",
+      "Ergonomic design"
+    ],
+    "onSale": true
+  },
+  {
+    "id": 6,
+    "name": "Gym Dumbbell Set",
+    "shortDesc": "Adjustable dumbbell set for strength training.",
+    "longDesc": "Versatile dumbbell set with adjustable weights for progressive strength training. Ergonomic handles for safe, comfortable grip. Ideal for home gyms.",
+    "price": 119.99,
+    "image": "https://hirakraja.com/3826-large_default/adjustable-dumbbell-set-17-kg.jpg",
+    "category": "Strength",
+    "brand": "IronFit",
+    "stock": 20,
+    "rating": 4.9,
+    "features": [
+      "Adjustable weights",
+      "Ergonomic handles",
+      "Durable material",
+      "Home gym friendly"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Fitness Resistance Bands",
+    "shortDesc": "Set of 5 resistance bands with varying tension levels.",
+    "longDesc": "High-quality latex resistance bands for strength, flexibility, and rehab exercises. Color-coded for multiple tension levels. Lightweight and portable.",
+    "price": 24.99,
+    "image": "https://m.media-amazon.com/images/I/71mF18V7YsL._UF894,1000_QL80_.jpg",
+    "category": "Fitness",
+    "brand": "FlexPro",
+    "stock": 50,
+    "rating": 4.6,
+    "features": [
+      "Latex material",
+      "Multiple tension levels",
+      "Portable",
+      "Strength & flexibility"
+    ],
+    "onSale": true
+  },
+  {
+    "id": 8,
+    "name": "Cycling Helmet Aero",
+    "shortDesc": "Lightweight helmet with aerodynamic design.",
+    "longDesc": "Aero helmet combining safety, comfort, and aerodynamics. Adjustable straps and padded lining ensure a secure fit. Ideal for road and mountain cycling.",
+    "price": 59.99,
+    "image": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/62de29c3-b06a-43f4-b18c-10749005c7b7.__CR0,0,970,600_PT0_SX970_V1___.jpg",
+    "category": "Cycling",
+    "brand": "CycleSafe",
+    "stock": 30,
+    "rating": 4.7,
+    "features": [
+      "Lightweight",
+      "Aerodynamic design",
+      "Adjustable straps",
+      "Padded lining"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Boxing Gloves Pro",
+    "shortDesc": "Durable gloves with extra padding for protection.",
+    "longDesc": "High-quality leather boxing gloves with reinforced padding for impact protection. Comfortable fit for training, sparring, and competitive boxing.",
+    "price": 69.99,
+    "image": "https://m.media-amazon.com/images/I/81Ylpm2D5mL._UF1000,1000_QL80_.jpg",
+    "category": "Boxing",
+    "brand": "PunchMax",
+    "stock": 25,
+    "rating": 4.8,
+    "features": [
+      "Leather material",
+      "Extra padding",
+      "Reinforced stitching",
+      "Comfortable fit"
+    ],
+    "onSale": true
+  },
+  {
+    "id": 10,
+    "name": "Golf Club Set",
+    "shortDesc": "Complete set with driver, irons, and putter.",
+    "longDesc": "Complete golf club set for beginners and intermediate players. High-quality steel shafts, ergonomic grips, and balanced club heads for accurate swings.",
+    "price": 299.99,
+    "image": "https://m.media-amazon.com/images/I/81hD+z9nPaL._UF1000,1000_QL80_.jpg",
+    "category": "Golf",
+    "brand": "GreenTee",
+    "stock": 10,
+    "rating": 4.5,
+    "features": [
+      "Complete set",
+      "Ergonomic grips",
+      "Steel shafts",
+      "Balanced club heads"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Nike Mercurial Superfly 8",
+    "shortDesc": "Lightweight football boots with excellent traction and control.",
+    "longDesc": "Nike Mercurial Superfly 8 football boots designed for speed and precision. Flyknit upper for a snug fit, textured surface for ball control, and a responsive soleplate for explosive acceleration. Perfect for professional and amateur players.",
+    "price": 249.99,
+    "image": "https://i0.wp.com/www.soccercleats101.com/wp-content/uploads/2022/07/Nike-Mercurial-Superfly-8-Progress-Pack.jpg?resize=618%2C447&ssl=1",
+    "category": "Football",
+    "brand": "Nike",
+    "stock": 20,
+    "rating": 4.9,
+    "features": [
+      "Flyknit upper",
+      "Textured surface for control",
+      "Lightweight",
+      "Responsive soleplate"
+    ],
+    "onSale": true
+  },
+  {
+    "id": 12,
+    "name": "Table Tennis Set",
+    "shortDesc": "Complete table tennis set with paddles and balls.",
+    "longDesc": "Durable table tennis set including two paddles, three balls, and a net. Perfect for beginners and advanced players. Lightweight and portable for easy setup.",
+    "price": 34.99,
+    "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/22e8886e8801fc438e44acf335913eb4de7e827f/8FT-Foldable-Table-Tennis-Ping-Pong-Table-Set%2C-2-Paddles-and-3-Balls.jpg?impolicy=medium",
+    "category": "Table Tennis",
+    "brand": "PingPro",
+    "stock": 35,
+    "rating": 4.7,
+    "features": [
+      "Complete set",
+      "Durable paddles",
+      "Portable net",
+      "Lightweight balls"
+    ]
+  }
+]
