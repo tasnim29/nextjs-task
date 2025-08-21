@@ -1,8 +1,10 @@
 "use client";
 import Link from "next/link";
+import { signOut, useSession } from "next-auth/react";
 import React from "react";
 
 const Navbar = () => {
+  const { data: session, status } = useSession();
   return (
     <div className="fixed top-5 left-1/2 -translate-x-1/2 z-50 ">
       <nav className="bg-black/80 backdrop-blur-lg shadow-lg rounded-full px-10 py-3 flex space-x-10 items-center w-full max-w-3xl">
@@ -16,11 +18,21 @@ const Navbar = () => {
             Products
           </p>
         </Link>
-        <Link href="/login">
-          <p className="text-white font-semibold hover:text-cyan-500 transition">
-            Login
-          </p>
-        </Link>
+        {status === "authenticated" ? (
+          <button
+            onClick={() => signOut()}
+            className="text-white font-semibold hover:text-cyan-500 transition"
+          >
+            Logout
+          </button>
+        ) : (
+          <Link href="/login">
+            <p className="text-white font-semibold hover:text-cyan-500 transition">
+              Login
+            </p>
+          </Link>
+        )}
+
         <Link href="/dashboard/add-product">
           <p className="text-white font-semibold hover:text-cyan-500 transition">
             Add Product

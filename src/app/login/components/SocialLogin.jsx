@@ -5,24 +5,21 @@ import React, { useEffect } from "react";
 import toast from "react-hot-toast";
 
 const SocialLogin = () => {
-  //   const router = useRouter();
-  //   const session = useSession();
-  //   const handleSocialLogin = (providerName) => {
-  //     signIn(providerName);
-  //   };
+  const router = useRouter();
+  const session = useSession();
 
-  //   useEffect(() => {
-  //     if (session?.status === "authenticated") {
-  //       router.push("/");
-  //       toast.success("Successfully logged in");
-  //     }
-  //   }, [session?.status]);
+  useEffect(() => {
+    if (session?.status === "authenticated") {
+      router.push("/");
+      toast.success("Successfully logged in");
+    }
+  }, [session?.status]);
 
   return (
     <div className="flex justify-center space-x-4">
       {/* google */}
       <button
-        // onClick={() => handleSocialLogin("google")}
+        onClick={() => signIn("google")}
         aria-label="Log in with Google"
         className="p-3 rounded-sm cursor-pointer transition duration-500 hover:scale-105"
       >

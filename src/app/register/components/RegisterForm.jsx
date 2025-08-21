@@ -5,6 +5,7 @@ import SocialLogin from "@/app/login/components/SocialLogin";
 
 import Link from "next/link";
 import React from "react";
+import toast from "react-hot-toast";
 
 const RegisterForm = () => {
   const handleSubmit = (e) => {
@@ -12,7 +13,11 @@ const RegisterForm = () => {
     const name = e.target.name.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
-    RegisterUser({ name, email, password });
+    RegisterUser({ name, email, password }).then((res) => {
+      if (res.insertedId) {
+        toast("successfully saved", res.data);
+      }
+    });
   };
   return (
     <div className="min-h-screen flex justify-center items-center  px-4">
@@ -73,7 +78,7 @@ const RegisterForm = () => {
         </div>
 
         <div>
-          <SocialLogin />
+          <SocialLogin></SocialLogin>
         </div>
 
         <p className="text-xs text-center text-gray-600">

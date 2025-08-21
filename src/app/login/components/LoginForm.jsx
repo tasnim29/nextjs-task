@@ -1,19 +1,39 @@
 "use client";
-import Image from "next/image";
+
 import React from "react";
 import { signIn } from "next-auth/react";
-
 import toast from "react-hot-toast";
+import { useRouter } from "next/navigation";
 import SocialLogin from "./SocialLogin";
 import Link from "next/link";
 
 const LoginForm = () => {
+  const router = useRouter();
   const handleSubmit = async (e) => {
     e.preventDefault();
     const form = e.target;
     const email = form.email.value;
     const password = form.password.value;
-    console.log(email, password);
+    toast("submitting...");
+
+    try {
+      const response = await signIn("credentials", {
+        email,
+        password,
+        callbackUrl: "/",
+        redirect: false,
+      });
+
+      if (response.ok) {
+        toast.success("logged in successful");
+        router.push("/");
+        form.reset();
+      } else {
+        toast.error("logged in failed");
+      }
+    } catch (error) {
+      toast.error("logged in failed");
+    }
   };
   return (
     <div className="min-h-screen flex justify-center items-center  px-4">
