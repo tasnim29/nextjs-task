@@ -37,19 +37,20 @@ export const authOptions = {
     signIn: "/login",
   },
   callbacks: {
-    async signIn({ user, account, profile, email, credentials }) {
-      if (account) {
-        const { providerAccountId, provider } = account;
-        const { email: user_email, image, name } = user;
+    async signIn({ user, account }) {
+      // Only handle social logins
+      if (account && account.provider !== "credentials") {
         const userCollection = dbConnect(collectionNameObj.usersCollection);
-        const existingUser = await userCollection.findOne({ user_email });
+        const existingUser = await userCollection.findOne({
+          email: user.email,
+        });
         if (!existingUser) {
           const payload = {
-            providerAccountId,
-            provider,
-            email: user_email,
-            image,
-            name,
+            providerAccountId: account.providerAccountId,
+            provider: account.provider,
+            email: user.email,
+            image: user.image,
+            name: user.name,
           };
           await userCollection.insertOne(payload);
         }

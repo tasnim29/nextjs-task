@@ -10,7 +10,7 @@ const SocialLogin = () => {
 
   useEffect(() => {
     if (session?.status === "authenticated") {
-      router.push("/");
+      router.push("/products");
       toast.success("Successfully logged in");
     }
   }, [session?.status]);

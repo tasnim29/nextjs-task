@@ -20,7 +20,7 @@ const LoginForm = () => {
       const response = await signIn("credentials", {
         email,
         password,
-        callbackUrl: "/",
+        callbackUrl: "/products",
         redirect: false,
       });
 

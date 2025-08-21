@@ -2,23 +2,50 @@
 
 import { RegisterUser } from "@/app/actions/auth/RegisterUser";
 import SocialLogin from "@/app/login/components/SocialLogin";
+import { signIn } from "next-auth/react";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+
 import React from "react";
 import toast from "react-hot-toast";
 
 const RegisterForm = () => {
-  const handleSubmit = (e) => {
+  const router = useRouter();
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const name = e.target.name.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
-    RegisterUser({ name, email, password }).then((res) => {
-      if (res.insertedId) {
-        toast("successfully saved", res.data);
+    try {
+      const res = await RegisterUser({ name, email, password });
+
+      if (res?.insertedId) {
+        toast.success("Registered successfully");
+
+        // Auto login
+        const loginResponse = await signIn("credentials", {
+          email,
+          password,
+          redirect: false,
+        });
+
+        if (loginResponse?.ok) {
+          toast.success("Logged in successfully");
+          router.push("/products"); // Redirect to products page
+          e.target.reset();
+        } else {
+          toast.error("Login failed after registration");
+        }
+      } else {
+        toast.error("Registration failed");
       }
-    });
+    } catch (error) {
+      console.error(error);
+      toast.error("Server error");
+    }
   };
+
   return (
     <div className="min-h-screen flex justify-center items-center  px-4">
       <div className="w-full max-w-md p-8 space-y-6 rounded-xl bg-white shadow-lg">
