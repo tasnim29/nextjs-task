@@ -1,19 +1,51 @@
 "use client";
 
-import React from "react";
-import productsData from "@/data/products.json";
+import React, { useEffect, useState } from "react";
+
 import Link from "next/link";
 
 const ProductPage = ({ params }) => {
-  const { id } = params; // get id from URL
-  const product = productsData.find((item) => item.id === parseInt(id));
+  const { id } = React.use(params);
+  console.log(id);
+  const [product, setProduct] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-  if (!product)
+  useEffect(() => {
+    const fetchProduct = async () => {
+      try {
+        const res = await fetch(`/api/products/add/${id}`);
+        const data = await res.json();
+
+        if (data.success) {
+          setProduct(data.data);
+        } else {
+          console.error("Failed to fetch product:", data.error);
+        }
+      } catch (err) {
+        console.error("Error fetching product:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProduct();
+  }, [id]);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <p className="text-xl font-bold text-gray-600">Loading product...</p>
+      </div>
+    );
+  }
+
+  if (!product) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <p className="text-xl font-bold text-gray-600">Product not found</p>
       </div>
     );
+  }
 
   return (
     <div className="min-h-screen py-32 px-4 max-w-5xl mx-auto">

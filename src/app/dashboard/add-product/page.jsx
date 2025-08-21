@@ -46,7 +46,7 @@ const AddProductPage = () => {
   };
 
   return (
-    <div className="max-w-3xl mx-auto py-20 px-4">
+    <div className="max-w-3xl mx-auto py-32 px-4">
       <h1 className="text-3xl font-bold mb-10 text-center text-gray-800">
         Add New Product
       </h1>
@@ -206,7 +206,7 @@ const AddProductPage = () => {
         <button
           type="submit"
           disabled={loading}
-          className="w-full py-3 px-4 bg-cyan-500 text-white font-semibold rounded-lg hover:bg-cyan-600 transition-all duration-300"
+          className="w-full py-3 px-4 bg-cyan-500 text-white font-semibold rounded-lg hover:bg-cyan-600 transition-all duration-300 cursor-pointer"
         >
           {loading ? "Adding..." : "Add Product"}
         </button>

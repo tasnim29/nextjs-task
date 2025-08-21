@@ -22,21 +22,21 @@ const RegisterForm = () => {
 
       if (res?.insertedId) {
         toast.success("Registered successfully");
+        router.push("/products");
 
-        // Auto login
-        const loginResponse = await signIn("credentials", {
-          email,
-          password,
-          redirect: false,
-        });
+        // // Auto login
+        // const loginResponse = await signIn("credentials", {
+        //   email,
+        //   password,
+        //   redirect: false,
+        // });
 
-        if (loginResponse?.ok) {
-          toast.success("Logged in successfully");
-          router.push("/products"); // Redirect to products page
-          e.target.reset();
-        } else {
-          toast.error("Login failed after registration");
-        }
+        // if (loginResponse?.ok) {
+        //   router.push("/products"); // Redirect to products page
+        //   e.target.reset();
+        // } else {
+        //   toast.error("Login failed after registration");
+        // }
       } else {
         toast.error("Registration failed");
       }

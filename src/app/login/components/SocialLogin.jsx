@@ -9,7 +9,11 @@ const SocialLogin = () => {
   const session = useSession();
 
   useEffect(() => {
-    if (session?.status === "authenticated") {
+    // Only run for social logins
+    if (
+      session?.status === "authenticated" &&
+      session?.data?.user?.provider !== "credentials"
+    ) {
       router.push("/products");
       toast.success("Successfully logged in");
     }

@@ -1,15 +1,43 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import productsData from "@/data/products.json"; // your JSON file path
+
 import Link from "next/link";
 
 const ProductsPage = () => {
   const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setProducts(productsData);
+    const fetchProducts = async () => {
+      try {
+        const res = await fetch("/api/products/add"); // calling  GET API
+        const data = await res.json();
+
+        if (data.success) {
+          setProducts(data.data);
+        } else {
+          console.error("Failed to fetch products", data.error);
+        }
+      } catch (err) {
+        console.error("Error fetching products:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProducts();
   }, []);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <p className="text-lg font-semibold text-gray-600">
+          Loading products...
+        </p>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen  py-32 px-4 max-w-7xl mx-auto">
@@ -20,7 +48,7 @@ const ProductsPage = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {products.map((product) => (
           <div
-            key={product.id}
+            key={product._id}
             className="relative bg-white rounded-2xl shadow-lg overflow-hidden group transition-all duration-500 hover:shadow-2xl hover:scale-105 flex flex-col"
           >
             {/* Sale Badge */}
@@ -56,7 +84,7 @@ const ProductsPage = () => {
               {/* Button */}
               <div className="mt-4">
                 <Link
-                  href={`/products/${product.id}`}
+                  href={`/products/${product._id}`}
                   className="w-full  py-2 px-4 bg-cyan-500 text-white font-semibold rounded-xl hover:bg-cyan-600 hover:scale-105 transition-all duration-300 cursor-pointer"
                 >
                   View Details

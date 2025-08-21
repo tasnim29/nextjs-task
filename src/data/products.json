@@ -1,6 +1,5 @@
 [
   {
-    "id": 1,
     "name": "Pro Basketball",
     "shortDesc": "Official size and weight basketball for indoor and outdoor play.",
     "longDesc": "Durable composite leather basketball designed for indoor and outdoor courts. Features excellent grip, high bounce, and consistent flight. Suitable for all skill levels.",
@@ -18,7 +17,6 @@
     ]
   },
   {
-    "id": 2,
     "name": "Soccer Ball Elite",
     "shortDesc": "FIFA-approved soccer ball with premium stitching.",
     "longDesc": "Premium stitched soccer ball for professional and casual play. Water-resistant, durable, and optimized for control and precision. Perfect for training and competitive matches.",
@@ -37,7 +35,6 @@
     "onSale": true
   },
   {
-    "id": 3,
     "name": "Tennis Racket Pro 3000",
     "shortDesc": "Lightweight racket with advanced tension technology.",
     "longDesc": "High-performance tennis racket with carbon frame for power and precision. Lightweight for faster swings and reduced arm fatigue. Suitable for intermediate and advanced players.",
@@ -55,7 +52,6 @@
     ]
   },
   {
-    "id": 4,
     "name": "Yoga Mat Comfort Plus",
     "shortDesc": "Non-slip, cushioned yoga mat for all exercises.",
     "longDesc": "Eco-friendly TPE yoga mat with extra cushioning and non-slip surface. Lightweight, portable, and perfect for yoga, pilates, and stretching exercises.",
@@ -74,7 +70,6 @@
     "onSale": true
   },
   {
-    "id": 5,
     "name": "Running Shoes SpeedX",
     "shortDesc": "Breathable running shoes with excellent cushioning.",
     "longDesc": "Lightweight running shoes with breathable mesh, shock-absorbing soles, and ergonomic design. Ideal for jogging, marathons, and daily workouts.",
@@ -93,7 +88,6 @@
     "onSale": true
   },
   {
-    "id": 6,
     "name": "Gym Dumbbell Set",
     "shortDesc": "Adjustable dumbbell set for strength training.",
     "longDesc": "Versatile dumbbell set with adjustable weights for progressive strength training. Ergonomic handles for safe, comfortable grip. Ideal for home gyms.",
@@ -111,7 +105,6 @@
     ]
   },
   {
-    "id": 7,
     "name": "Fitness Resistance Bands",
     "shortDesc": "Set of 5 resistance bands with varying tension levels.",
     "longDesc": "High-quality latex resistance bands for strength, flexibility, and rehab exercises. Color-coded for multiple tension levels. Lightweight and portable.",
@@ -130,7 +123,6 @@
     "onSale": true
   },
   {
-    "id": 8,
     "name": "Cycling Helmet Aero",
     "shortDesc": "Lightweight helmet with aerodynamic design.",
     "longDesc": "Aero helmet combining safety, comfort, and aerodynamics. Adjustable straps and padded lining ensure a secure fit. Ideal for road and mountain cycling.",
@@ -148,7 +140,6 @@
     ]
   },
   {
-    "id": 9,
     "name": "Boxing Gloves Pro",
     "shortDesc": "Durable gloves with extra padding for protection.",
     "longDesc": "High-quality leather boxing gloves with reinforced padding for impact protection. Comfortable fit for training, sparring, and competitive boxing.",
@@ -167,7 +158,6 @@
     "onSale": true
   },
   {
-    "id": 10,
     "name": "Golf Club Set",
     "shortDesc": "Complete set with driver, irons, and putter.",
     "longDesc": "Complete golf club set for beginners and intermediate players. High-quality steel shafts, ergonomic grips, and balanced club heads for accurate swings.",
@@ -185,7 +175,6 @@
     ]
   },
   {
-    "id": 11,
     "name": "Nike Mercurial Superfly 8",
     "shortDesc": "Lightweight football boots with excellent traction and control.",
     "longDesc": "Nike Mercurial Superfly 8 football boots designed for speed and precision. Flyknit upper for a snug fit, textured surface for ball control, and a responsive soleplate for explosive acceleration. Perfect for professional and amateur players.",
@@ -204,7 +193,6 @@
     "onSale": true
   },
   {
-    "id": 12,
     "name": "Table Tennis Set",
     "shortDesc": "Complete table tennis set with paddles and balls.",
     "longDesc": "Durable table tennis set including two paddles, three balls, and a net. Perfect for beginners and advanced players. Lightweight and portable for easy setup.",

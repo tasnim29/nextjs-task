@@ -11,8 +11,8 @@ const Footer = () => {
     <footer className="bg-gray-800 text-gray-300 py-6 mt-10">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-4">
         {/* Site Name */}
-        <div className="text-xl font-semibold text-yellow-600 mb-4 md:mb-0">
-          ProPlay Gear
+        <div className="text-xl font-semibold text-white mb-4 md:mb-0">
+          Sports Gear
         </div>
 
         {/* Social Icons */}
