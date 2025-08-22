@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import toast from "react-hot-toast";
+import { ClipLoader } from "react-spinners";
 
 const AddProductPage = () => {
   const [loading, setLoading] = useState(false);
@@ -208,7 +209,7 @@ const AddProductPage = () => {
           disabled={loading}
           className="w-full py-3 px-4 bg-cyan-500 text-white font-semibold rounded-lg hover:bg-cyan-600 transition-all duration-300 cursor-pointer"
         >
-          {loading ? "Adding..." : "Add Product"}
+          {loading ? <ClipLoader size={20} color="#fff" /> : "Add Product"}
         </button>
       </form>
     </div>
